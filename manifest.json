@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Dev Token Injector",
+  "version": "1.0",
+  "description": "Automatically adds dev_token=TRUE to all URLs including JavaScript and CSS files",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
